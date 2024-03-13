@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-center {
+    box-shadow: 0px 0px 30px #333;
+    background-color: #fff;
+    max-width: 100%;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo {
+    height: 40px;
+}
+
+.links a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(62, 62, 62);
+    letter-spacing: 0.3rem;
+    transition: all 0.5s  ease 0s;
+    display: block;
+    padding: 0.6rem 1rem;
+}
+
+.links a:hover {
+    color: rgb(97, 164, 206);
+    padding: 0.6rem 1.5rem;
+    list-style: none;
+    background-color: rgb(177, 213, 252);
+    color: rgb(97, 164, 206);
+}
+
+.social-icons {
+    display: none;
+}
+
+.nav-toggle {
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.5rem;
+    transition: all 0.5s  ease 0s;
+    color: rgb(97, 164, 206);
+}
+
+.nav-toggle:hover {
+    transform: rotate(90deg);
+    color: rgb(62, 62, 62);
+    cursor: pointer;
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.show-links {
+    height: 10rem;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-center {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.1rem;
+    }
+    .links li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .links {
+        display: flex;
+        height: auto;
+    }
+
+    .links a {
+        padding: 0.5rem;
+    }
+
+    .links a:hover{
+        background-color: transparent;
+        padding: 0.5rem;
+    }
+
+    .social-icons {
+        display: flex;
+        list-style: none;
+        padding: 1rem;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .fa {
+        padding: 4px;
+        font-size: 10px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+        transition: all 0.5s  ease 0s;
+    }
+      
+    .fa:hover {
+        opacity: 0.6;
+    }
+      
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+      
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+    
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+}
